@@ -6,10 +6,8 @@ export default function Navbar() {
     const [activeSection, setActiveSection] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    // Track scroll for active link + navbar background
     useEffect(() => {
         const handleScroll = () => {
-            // Active section
             const sections = document.querySelectorAll('section');
             let current = '';
             sections.forEach(section => {
@@ -20,7 +18,6 @@ export default function Navbar() {
             });
             if (current) setActiveSection(current);
 
-            // Navbar background
             setScrolled(window.scrollY > 50);
         };
 
@@ -28,7 +25,6 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Close mobile menu when clicking outside
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (!e.target.closest('.navbar')) {
@@ -39,7 +35,6 @@ export default function Navbar() {
         return () => document.removeEventListener('click', handleClickOutside);
     }, []);
 
-    // Smooth scroll handler
     const handleNavClick = (e, href) => {
         e.preventDefault();
         const target = document.querySelector(href);
@@ -55,9 +50,9 @@ export default function Navbar() {
 
     return (
         <nav className="navbar" style={navbarStyle}>
-            <div className="logo-container">
+            <a href="#home" className="logo-container decoration">
                 <div className="logo">ก้าวใกล้</div>
-            </div>
+            </a>
             <button
                 className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`}
                 aria-label="Toggle menu"

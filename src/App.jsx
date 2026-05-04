@@ -5,18 +5,20 @@ import PresidentSection from './components/PresidentSection';
 import ManagementSection from './components/ManagementSection';
 import MembersSection from './components/MembersSection';
 import PolicySection from './components/PolicySection';
-import ContentSection from './components/ContentSection';
+// import ContentSection from './components/ContentSection';
 import FeedbackSection from './components/FeedbackSection';
 import MemberModal from './components/MemberModal';
 import Footer from './components/Footer';
+import Lenis from 'lenis';
+import BackgroundSound from './components/BackgroundSound';
+
+const soundSections = [{ src: '/sounds/background.mp3'}];
 
 export default function App() {
     const [selectedMember, setSelectedMember] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    // Inject ripple keyframe + branding console log on mount
     useEffect(() => {
-        // Branding console
         console.log(
             '%cพรรคก้าวใกล้',
             'color: #FFD700; font-size: 40px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,71,171,0.5)'
@@ -26,7 +28,6 @@ export default function App() {
             'color: #FFA500; font-size: 14px; font-style: italic;'
         );
 
-        // Add ripple keyframe (for feedback button)
         const style = document.createElement('style');
         style.textContent = `
             @keyframes ripple {
@@ -38,7 +39,6 @@ export default function App() {
         `;
         document.head.appendChild(style);
 
-        // Page-load fade in
         document.body.style.opacity = '0';
         const timer = setTimeout(() => {
             document.body.style.transition = 'opacity 0.5s ease';
@@ -51,6 +51,31 @@ export default function App() {
         };
     }, []);
 
+    useEffect(() => {
+        const lenis = new Lenis({
+            lerp: 0.08,
+            wheelMultiplier: 0.9,
+            touchMultiplier: 0.95,
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault()
+                const target = document.querySelector(link.getAttribute('href'))
+                if (target) lenis.scrollTo(target, { duration: 1.2 })
+            })
+        })
+
+        return () => lenis.destroy()
+    }, [])
+
     const handleMemberClick = (memberId) => {
         setSelectedMember(memberId);
         setIsModalOpen(true);
@@ -58,7 +83,6 @@ export default function App() {
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
-        // Keep selectedMember so the modal animates out smoothly with content
         setTimeout(() => setSelectedMember(null), 300);
     };
 
@@ -70,7 +94,7 @@ export default function App() {
             <ManagementSection onMemberClick={handleMemberClick} />
             <MembersSection />
             <PolicySection />
-            <ContentSection />
+            {/* <ContentSection /> */}
             <FeedbackSection />
             <MemberModal
                 memberId={selectedMember}
@@ -78,6 +102,7 @@ export default function App() {
                 onClose={handleCloseModal}
             />
             <Footer />
+            <BackgroundSound sections={soundSections} volume={0.2} />
         </>
     );
 }

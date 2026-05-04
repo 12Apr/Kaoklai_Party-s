@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { membersData } from '../data/membersData';
 
 export default function MemberModal({ memberId, isOpen, onClose }) {
-    // Disable body scroll while modal is open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -14,7 +13,6 @@ export default function MemberModal({ memberId, isOpen, onClose }) {
         };
     }, [isOpen]);
 
-    // Close with Escape key
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.key === 'Escape' && isOpen) {
@@ -27,7 +25,6 @@ export default function MemberModal({ memberId, isOpen, onClose }) {
 
     const member = memberId ? membersData[memberId] : null;
 
-    // Click outside content closes modal
     const handleBackdropClick = (e) => {
         if (e.target.classList.contains('modal')) {
             onClose();

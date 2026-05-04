@@ -4,7 +4,6 @@ export default function FeedbackSection() {
     const sectionRef = useRef(null);
     const buttonRef = useRef(null);
 
-    // Fade-in observer
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -25,7 +24,6 @@ export default function FeedbackSection() {
         return () => observer.disconnect();
     }, []);
 
-    // Ripple effect on click
     const handleRipple = (e) => {
         const button = buttonRef.current;
         if (!button) return;

@@ -1,8 +1,3 @@
-// ข้อมูลสมาชิกแบบละเอียด (สำหรับ Modal)
-const secretarySvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='320'%3E%3Crect fill='%230047AB' width='300' height='320'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3Eเลขานุการ%3C/text%3E%3C/svg%3E";
-
-const assistantSecretarySvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='320'%3E%3Crect fill='%231E90FF' width='300' height='320'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='%23FFD700' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3Eผช.เลขานุการ%3C/text%3E%3C/svg%3E";
-
 export const membersData = {
     president: {
         name: 'กัลยาณี โลหะทิน',
@@ -31,7 +26,7 @@ export const membersData = {
     vice2: {
         name: 'คุณานนต์ ยอดเกวียน',
         nickname: 'เซน',
-        image: 'img/manager/kunanont.jpg',
+        image: 'img/manager/kunanon.jpg',
         highlights: [
             'มีความสามารถในการวิเคราะห์และแก้ปัญหาเฉพาะหน้าได้ดี',
             'เคยเป็นหัวหน้าโครงการพัฒนาห้องสมุดโรงเรียน',
@@ -78,7 +73,6 @@ export const membersData = {
     }
 };
 
-// คณะผู้บริหารพรรค (สำหรับแสดงในหน้า)
 export const executives = [
     {
         id: 'spokesperson',
@@ -89,7 +83,7 @@ export const executives = [
     },
     {
         id: 'vice2',
-        image: 'img/manager/kunanont.jpg',
+        image: 'img/manager/kunanon.jpg',
         name: 'คุณานนต์ ยอดเกวียน',
         details: 'ม.5/1 | วิทย์-คณิต',
         badge: { class: 'vice-badge', icon: 'fa-star', label: 'รองหัวหน้าพรรค' }
@@ -118,25 +112,25 @@ export const executives = [
 ];
 
 export const committeeMembers = [
-  { id: 'committee-1',  image: 'img/member/kamonthat.jpg',  name: 'กมนทัต กาญจนรัตน์วารี', details: 'ม.5/1 | วิทย์-คณิต' },
-  { id: 'committee-2',  image: 'img/member/phopeang.jpg',  name: 'พอเพียง เสนีวงศ์ ณ อยุธยา', details: 'ม.5/3 | วิทย์-คณิต' },
-  { id: 'committee-3',  image: 'img/member/kanyapron.jpg',  name: 'กัญญาพร กาญจนวาส', details: 'ม.5/3 | วิทย์-คณิต' },
+  { id: 'committee-1',  image: 'img/member/kamonthat.jpg',  name: 'กมนทัต กาญจนรัตน์วารี', details: 'ม.5/1 | วิทย์-คณิต'},
+  { id: 'committee-2',  image: 'img/member/danaya.jpg',  name: 'ดนยา ชวนะศิลป์', details: 'ม.5/1 | วิทย์-คณิต' },
+  { id: 'committee-3', image: 'img/member/pronyanee.jpg', name: 'พรญาณี นามทอง', details: 'ม.5/2 | วิทย์-คณิต' },
   { id: 'committee-4',  image: 'img/member/pareploy.jpg',  name: 'แพรพลอย พิลึก', details: 'ม.5/2 | วิทย์-คณิต' },
-  { id: 'committee-5',  image: 'img/member/panatha.jpg',  name: 'ปณัฎฎา ซ่อนกลิ่น', details: 'ม.5/6 | สถาปัตย์' },
-  { id: 'committee-6',  image: 'img/member/tantawan.jpg',  name: 'ทานตะวัน เวียงวิเศษ', details: 'ม.5/3 | วิทย์-คณิต' },
-  { id: 'committee-7',  image: 'img/member/suthida.jpg',  name: 'สุธิดา เพ็ชรเสือ', details: 'ม.5/3 | วิทย์-คณิต' },
-  { id: 'committee-8',  image: 'img/member/sirinrat.jpg',  name: 'ศิรินทร์รัตน์ บุญสุภาพ', details: 'ม.5/6 | สถาปัตย์' },
-  { id: 'committee-9',  image: 'img/member/kanyapak.jpg',  name: 'กัญญาภัค ฤกษ์ทิพย์ศร', details: 'ม.5/6 | สถาปัตย์' },
+  { id: 'committee-5', image: 'img/member/nattakrit.jpg', name: 'ณัฐกฤษฏิ์ สุขสมกิจ', details: 'ม.5/2 | วิทย์-คณิต' },
+  { id: 'committee-6', image: 'img/member/nattamont.jpg', name: 'ณัฐมน ศุภกาญจน์', details: 'ม.5/2 | วิทย์-คณิต' },
+  { id: 'committee-7',  image: 'img/member/phopeang.jpg',  name: 'พอเพียง เสนีวงศ์ ณ อยุธยา', details: 'ม.5/3 | วิทย์-คณิต' },
+  { id: 'committee-8',  image: 'img/member/kanyapron.jpg',  name: 'กัญญาพร กาญจนวาส', details: 'ม.5/3 | วิทย์-คณิต' },
+  { id: 'committee-9',  image: 'img/member/tantawan.jpg',  name: 'ทานตะวัน เวียงวิเศษ', details: 'ม.5/3 | วิทย์-คณิต' },
   { id: 'committee-10',  image: 'img/member/puyapron.jpg',  name: 'ปุณยาพร มดแสง', details: 'ม.5/3 | วิทย์-คณิต' },
-  { id: 'committee-11', image: 'img/member/supanthisa.jpg', name: 'สุพันธิสา ชูแสง', details: 'ม.5/6 | สถาปัตย์' },
+  { id: 'committee-11',  image: 'img/member/suthida.jpg',  name: 'สุธิดา เพ็ชรเสือ', details: 'ม.5/3 | วิทย์-คณิต' },
   { id: 'committee-12', image: 'img/member/pronanek.jpg', name: 'พรเอนก เจริญดี', details: 'ม.5/3 | วิทย์-คณิต' },
-  { id: 'committee-13', image: 'img/member/nattakrit.jpg', name: 'ณัฐกฤษฏิ์ สุขสมกิจ', details: 'ม.5/2 | วิทย์-คณิต' },
-  { id: 'committee-14', image: 'img/member/nattamont.jpg', name: 'ณัฐมน ศุภกาญจน์', details: 'ม.5/2 | วิทย์-คณิต' },
-  { id: 'committee-15', image: 'img/member/.jpg', name: '', details: 'ม.5/ | วิทย์-คณิต' },
-  { id: 'committee-16', image: 'img/member/.jpg', name: '', details: 'ม.5/ | วิทย์-คณิต' },
+  { id: 'committee-13', image: 'img/member/nammont.jpg', name: 'น้ำมนต์ สาลารัตน์', details: 'ม.5/3 | วิทย์-คณิต' },
+  { id: 'committee-14',  image: 'img/member/panatha.jpg',  name: 'ปณัฎฎา ซ่อนกลิ่น', details: 'ม.5/6 | สถาปัตย์' },
+  { id: 'committee-15',  image: 'img/member/sirinrat.jpg',  name: 'ศิรินทร์รัตน์ บุญสุภาพ', details: 'ม.5/6 | สถาปัตย์' },
+  { id: 'committee-16',  image: 'img/member/kanyapak.jpg',  name: 'กัญญาภัค ฤกษ์ทิพย์ศร', details: 'ม.5/6 | สถาปัตย์' },
+  { id: 'committee-17', image: 'img/member/supanthisa.jpg', name: 'สุพันธิสา ชูแสง', details: 'ม.5/6 | สถาปัตย์' },
 ];
 
-// นโยบาย
 export const policies = [
     { icon: 'fa-hands-wash', title: '1. สภาช่วยเช็ค', description: 'การช่วยดูแลโรงเรียนในเรื่องของการทิ้งขยะไม่ถูกที่ โดยจัดเวรสภาวันละ 5 คน แบ่งทีมเป็น 2 ทีม ตรวจตึกใหม่ 2 คน ตึกเก่า 3 คน เพื่อรักษาความสะอาดของโรงเรียน' },
     { icon: 'fa-comments', title: '2. สภา Speak Out', description: 'รับฟังปัญหาผ่าน NGL และ QR Code ทั่วอาคารเรียน ให้ทุกคนส่งความคิดเห็นได้แบบนิรนาม เพื่อนำเสียงของนักเรียนไปแก้ไขในสภาโดยไม่เปิดเผยตัวตน' },
@@ -152,7 +146,6 @@ export const policies = [
     { icon: 'fa-heart', title: '12. พูดแทนใจให้สภา', description: 'เปิดพื้นที่รับฟังความคิดเห็นและปัญหาผ่าน NGL เว็บไซต์ และ Instagram พรรคก้าวใกล้ แบบไม่เปิดเผยตัวตน เพื่อให้ทุกคนกล้าแสดงความเห็น' }
 ];
 
-// คอนเทนต์พรรค
 export const contents = [
     { image: 'img/content1.jpg', caption: 'แนะนำสมาชิกพรรคก้าวใกล้ 🔥', featured: true },
     { image: 'img/content2.jpg', caption: 'นโยบายเด็ด ที่นักเรียนต้องรู้ 📋' },
@@ -161,13 +154,12 @@ export const contents = [
     { image: 'img/content5.jpg', caption: 'Behind the scenes 🎬' }
 ];
 
-// เมนู Navbar
 export const navItems = [
-    { href: '#home', label: 'หน้าหลัก' },
+    // { href: '#home', label: 'หน้าหลัก' },
     { href: '#president', label: 'หัวหน้าพรรค' },
     { href: '#management', label: 'คณะบริหารพรรค' },
     { href: '#members', label: 'คณะกรรมการพรรค' },
     { href: '#policy', label: 'นโยบาย' },
-    { href: '#content', label: 'คอนเทนต์พรรค' },
+    // { href: '#content', label: 'คอนเทนต์พรรค' },
     { href: '#feedback', label: 'ส่งปัญหา/ข้อเสนอแนะ' }
 ];

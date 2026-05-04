@@ -78,6 +78,7 @@ body::before {
 .logo-container {
     display: flex;
     align-items: center;
+    text-decoration: none;
     gap: 1rem;
     animation: fadeInLeft 0.8s ease-out;
 }
