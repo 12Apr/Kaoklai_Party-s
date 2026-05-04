@@ -662,8 +662,8 @@ body::before {
 
 .committee-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1rem;
     margin-top: 80px;
 }
 
@@ -744,7 +744,7 @@ body::before {
 .policy-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3.5rem;
+    gap: 1.5rem;
     margin-top: 80px;
 }
 
@@ -1390,7 +1390,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        gap: 2.5rem;
+        gap: 1.5rem;
     }
 }
 
@@ -1487,7 +1487,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        gap: 2.5rem;
+        gap: 1.5rem;
     }
 }
 
@@ -1584,7 +1584,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2.5rem;
+        gap: 1.5rem;
     }
 }
 
@@ -1747,7 +1747,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
         margin-top: 60px;
     }
 
@@ -1942,7 +1942,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
         margin-top: 60px;
     }
 
@@ -2129,7 +2129,7 @@ body::before {
 
     .policy-grid {
         grid-template-columns: 1fr;
-        gap: 1.8rem;
+        gap: 1.5rem;
         margin-top: 50px;
     }
 
@@ -2237,13 +2237,17 @@ body::before {
         gap: 0.5rem;
     }
 
+    .executive-image {
+        height: 350px;
+    }
+
     .committee-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 
     .committee-image {
-        height: 220px;
+        height: 350px;
     }
 
     .feedback-title {

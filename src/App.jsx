@@ -10,7 +10,7 @@ import FeedbackSection from './components/FeedbackSection';
 import MemberModal from './components/MemberModal';
 import Footer from './components/Footer';
 import Lenis from 'lenis';
-import BackgroundSound from './components/BackgroundSound';
+import BackgroundSound from './components/Backgroundsound';
 
 const soundSections = [{ src: '/sounds/background.mp3'}];
 
