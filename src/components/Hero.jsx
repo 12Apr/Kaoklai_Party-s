@@ -5,7 +5,7 @@ export default function Hero() {
                 <div className="party-boxes">
                     <div className="symbol-box">
                         <div className="number-item">
-                            <div className="party-number">2</div>
+                            <div className="party-number">1</div>
                         </div>
                         <div className="symbol-item">
                             <div className="party-symbol">
@@ -25,7 +25,7 @@ export default function Hero() {
                     </div>
                     <div className="info-box">
                         <div className="party-name">ก้าวใกล้</div>
-                        <div className="party-slogan">"ไม่ก้าวใกล้ แต่ก้าวไปด้วยกัน"</div>
+                        <div className="party-slogan">"ก้าวสั้นๆ แต่ยั่งยืน"</div>
                     </div>
                 </div>
             </div>

@@ -5,13 +5,12 @@ import PresidentSection from './components/PresidentSection';
 import ManagementSection from './components/ManagementSection';
 import MembersSection from './components/MembersSection';
 import PolicySection from './components/PolicySection';
-// import ContentSection from './components/ContentSection';
+import ContentSection from './components/ContentSection';
 import FeedbackSection from './components/FeedbackSection';
 import VoteSection from './components/VoteSection';
 import MemberModal from './components/MemberModal';
 import Footer from './components/Footer';
 import Lenis from 'lenis';
-import BackgroundSound from './components/Backgroundsound';
 
 const soundSections = [{ src: '/sounds/background.mp3'}];
 
@@ -104,7 +103,6 @@ export default function App() {
                 onClose={handleCloseModal}
             />
             <Footer />
-            <BackgroundSound sections={soundSections} volume={0.2} />
         </>
     );
 }

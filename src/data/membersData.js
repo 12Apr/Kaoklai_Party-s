@@ -147,11 +147,11 @@ export const policies = [
 ];
 
 export const contents = [
-    { image: 'img/content1.jpg', caption: 'แนะนำสมาชิกพรรคก้าวใกล้ 🔥', featured: true },
-    { image: 'img/content2.jpg', caption: 'นโยบายเด็ด ที่นักเรียนต้องรู้ 📋' },
-    { image: 'img/content3.jpg', caption: 'สภาไม่เคร่ง เน้นเสียงหัวเราะ 😂' },
-    { image: 'img/content4.jpg', caption: 'ก้าวใกล้ ไม่ก้าวคนเดียว 💙' },
-    { image: 'img/content5.jpg', caption: 'Behind the scenes 🎬' }
+    { image: 'img/content1.jpg', caption: 'แนะนำสมาชิกพรรคก้าวใกล้', featured: true },
+    { image: 'img/content2.jpg', caption: 'นโยบายเด็ด ที่นักเรียนต้องรู้' },
+    { image: 'img/content3.jpg', caption: 'สภาไม่เคร่ง เน้นเสียงหัวเราะ' },
+    { image: 'img/content4.jpg', caption: 'ก้าวใกล้ ไม่ก้าวคนเดียว' },
+    { image: 'img/content5.jpg', caption: 'Behind the scenes' }
 ];
 
 export const navItems = [
@@ -160,6 +160,7 @@ export const navItems = [
     { href: '#management', label: 'คณะบริหารพรรค' },
     { href: '#members', label: 'คณะกรรมการพรรค' },
     { href: '#policy', label: 'นโยบาย' },
-    // { href: '#content', label: 'คอนเทนต์พรรค' },
+    { href: '#content', label: 'คอนเทนต์พรรค' },
+    { href: '#votesection', label: 'โหวตนโยบาย' },
     { href: '#feedback', label: 'ส่งปัญหา/ข้อเสนอแนะ' }
 ];

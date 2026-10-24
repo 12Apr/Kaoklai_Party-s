@@ -1041,6 +1041,7 @@ body::before {
 
 .devlink{
         text-decoration: none;
+        color: yellow;
 }
 
 .developer i {
