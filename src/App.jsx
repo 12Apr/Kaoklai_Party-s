@@ -7,6 +7,7 @@ import MembersSection from './components/MembersSection';
 import PolicySection from './components/PolicySection';
 // import ContentSection from './components/ContentSection';
 import FeedbackSection from './components/FeedbackSection';
+import VoteSection from './components/VoteSection';
 import MemberModal from './components/MemberModal';
 import Footer from './components/Footer';
 import Lenis from 'lenis';
@@ -94,7 +95,8 @@ export default function App() {
             <ManagementSection onMemberClick={handleMemberClick} />
             <MembersSection />
             <PolicySection />
-            {/* <ContentSection /> */}
+            <ContentSection />
+            <VoteSection />
             <FeedbackSection />
             <MemberModal
                 memberId={selectedMember}
